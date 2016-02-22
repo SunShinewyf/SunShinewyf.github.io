@@ -1,0 +1,137 @@
+@import "../modules/_mixins";
+header{
+          	background:$header_color;
+          	height:80px;line-height:80px;
+          	@include css3(box-shadow,5px 5px 3px #909090);
+          	p{
+          	     font-size:2em;
+                     height:100%;
+                     margin-left:5%;
+          	     color:$font_color;
+          	     font-weight:bold;
+                     float:left;
+          	}
+}
+@media screen and (min-width: 960px){
+      header{
+               p{
+                     width:50%;
+               }
+          .active{
+            width:45%;height:100%;     float:right;
+          li{
+                      width:25%;
+                      height:100%;
+                      float:left;
+                      a{
+                         color:$font_color;
+                         font-size:1.5em;
+                         font-weight:bold;
+                      }
+                  }
+          }
+          .menu{
+          display:none;
+          }
+      }
+}
+@media screen and (min-width:660px) and (max-width: 960px){
+     header{
+       p{
+           width:70%;
+       }
+       .active{
+       display:none;
+       }
+     .menu{
+         width:15%;
+         height:100%;float:right;
+         display:block;
+         img{vertical-align:middle;}
+         ul{
+         display:none;
+         }
+     }
+     }
+}
+@media screen and (min-width: 460px) and (max-width: 660px){
+     header{
+     p{
+         font-size:1.5em;
+     }
+     .active{
+       display:none;
+       }
+         .menu{
+         width:15%;
+         height:100%;float:right;
+         display:block;
+         img{vertical-align:middle;}
+         ul{
+         display:none;
+         }
+     }
+     }
+}
+@media screen and (min-width:350px) and (max-width:460px){
+     header{
+           p{width:80%;font-size:1.2em;}
+     .active{
+       display:none;
+       }
+         .menu{
+         width:15%;
+         height:100%;float:right;
+         display:block;
+         img{vertical-align:middle;}
+         ul{
+         display:none;
+         }
+     }
+           }
+}
+
+@media screen and (max-width:350px){
+    header{
+       p{width:80%;font-size:1em;}
+         .active{
+       display:none;
+       }
+         .menu{
+         width:15%;
+         height:100%;float:right;
+         display:block;
+         img{vertical-align:middle;}
+         ul{
+         display:none;
+         }
+     }
+    }
+}
+
+.head{
+  height:300px;
+  .menu{
+     border-top:1px solid $tour_border;
+      width:100%;
+      height:70%;
+      margin-top:-220px;
+      position:relative;
+      img{
+      position:absolute;
+      right:3%;top:-54px;
+      }
+      ul{
+      display:block;
+      width:100%;height:100%;
+       a{
+      font-size:1.5em;color:$font_color;
+      }
+      li{
+      height:23%;line-height:2.3em;padding-left:5%;
+      }
+      }
+  }
+
+
+}

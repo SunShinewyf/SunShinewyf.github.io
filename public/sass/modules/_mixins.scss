@@ -1,0 +1,28 @@
+/*  css3 mixins */
+@mixin css3($property, $value) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+        #{$prefix}#{$property}: $value;
+    }
+}
+
+
+
+/*清除浮动*/
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/*红色和白色*/
+@function black($opacity){
+  @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+  @return rgba(255,255,255,$opacity)
+}

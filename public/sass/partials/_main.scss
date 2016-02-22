@@ -1,0 +1,236 @@
+.container{
+	width:100%;
+	background:$body_color;
+	height:auto;
+	margin-top:78px;
+
+}
+.mid{
+          .arrow{
+                   position:absolute;
+                   right:-13.2%;
+                   heigth:0;
+	       border-color: transparent #3C948B transparent  transparent;
+                   border-width: 20px 20px 20px 0px;
+                   border-style: dashed solid dashed dashed;
+	}
+          height:300px;width:73%;margin:0 auto;
+	.left{
+	      position:relative;
+	      width:49.2%;
+	      height:290px;
+	      float:left;
+	      background:$white;
+	      border:5px solid transparent;
+                   border-right-color: #fff;
+                   h2{
+                      font-size:1.5em;
+                      color:$font_color;
+                      text-align:center;
+                      padding:15px 0;
+                   }
+                   p{
+                      text-indent:2em;
+                      line-height:2em;
+                      font-size:1.2em;
+                      padding:10px 10%;
+                      color:$black;
+                   }
+               .arrow1{
+                   top:254px;
+               }
+               .arrow2{
+                 top:-5px;
+               }
+	}
+	
+	.right{
+	      width:43.6%;position:relative;height:300px;
+	      float:right;
+	      img{
+                     width:100%;
+	        height:300px;
+	        zoom: 1;
+	      }
+	       .num{
+	      left:15%;top:250px;width:100%;height:21px;position:absolute;z-index:999;
+	      li{background:url("../img/btn_main_img.png") no-repeat 0px 0px;margin:0px;padding:0px;width:21px;height:21px;text-indent:-1000px;float:left;display:block;
+     
+	       }
+	        .on{
+                     background-position:0px -21px;
+                     }
+	      }
+	      .slider{
+	         position:relative;
+	         width:100%;
+	         height:300px;
+	         overflow:hidden;
+
+	      }
+	}
+    }
+    .tour-list{
+    @include clearfix();
+           width:73%;height:600px;margin:0 auto;background:$body_color;margin-top:78px;
+           .one{
+               background:$white;
+               height:600px;
+               width:50%;
+               float:left;
+               @include css3(border-radius,0.5em);
+               img{width:100%;border-radius: 0.5em 0.5em 0px 0px;}
+               p{padding:8%;line-height:2em;font-size:1.2em;}
+           }
+           ul{
+           @include clearfix();
+           width:46%;
+           height:600px;
+           float:right;
+           li{
+             width:100%;
+             height:185px;
+             @include css3(border-radius,0.5em);
+             img{
+               height:100%;width:52%;border-radius: 0.5em 0px 0px 0.5em;float:left;
+             }
+             .desc{
+             width:48%;height:100%;float:right;background:$white;border-radius: 0 0.5em 0.5em 0;
+             h2{color:$font_color;font-size:1.2em;padding:10%;}
+             p{
+                 padding:10%;
+             }
+             span a{background:url(../img/arow.png) no-repeat 7% 53%;padding: 0px 0px 0px 13%;color:$link_color;display:block;font-size:1.3em;}
+             }
+           }
+           li:not(.first){
+            margin-top:20px;
+            }
+           }
+
+    }
+
+    .book-list{
+        @include clearfix();
+       margin-top:78px;
+       height:auto;
+       width:100%;
+       background:$footer_color;
+       border-bottom:1px solid $border_color;
+       ul{
+          width:73%;padding-top:50px;
+          height:350px;margin:0 auto;
+           li{
+           width:23%;
+           border:1px solid $border_color;
+           height:297px;
+           float:left;
+            img{
+            width:85%;
+            height:155px;margin-left:7.5%;margin-top:7%;
+            }
+            p{
+                 padding:15px;
+                 color:#555;
+                 font-size:1.3em;
+                 text-align:center;
+            }
+            span a{
+                color:#3C948B;
+                padding-left:30%;
+            }
+        }
+       li:not(.first){
+            margin-left:2.3%;
+         }
+       }
+ 
+    }
+     @media screen and (max-width: 960px){
+     .container{width:100%;overflow-x:hidden;margin-top:30px;
+      .mid{
+
+             width:100%;height:auto;
+             .arrow{display:none;}
+             .left{
+                    width:100%;margin-bottom:-50px;
+             }
+              .right{
+                  background:$white;margin-bottom:30px;
+                  width:100%;
+                  .slider{width:100%;
+                   li{
+                     width:80%;display:block;margin-left:10%;
+                   }
+                  }
+              }       
+       }
+    .tour-list{
+           @include clearfix();
+          height:auto;width:80%;
+         .one{width:100%;height:auto;}
+         ul{
+         width:100%;
+         li{
+            width:100%;margin-top:20px;height:160px;background:$white;
+            img{float:left;}
+            .desc{
+               float:left; span a{padding:0 0 0 16%;}
+            }
+         }
+         }
+     }
+}
+     }
+
+     @media screen and (min-width:800px) and (max-width: 960px){
+     .book-list{
+         ul{
+              width:80%;
+              li{
+                  width:31.3%;
+              }
+              li:last-child{
+              margin-top:20px;margin-left:0;margin-bottom:30px;
+              }
+         }
+     }
+   }
+  @media screen and (min-width:400px) and (max-width:800px){
+       .book-list{
+       width:100%;
+            ul{
+              width:80%;
+              li{
+                width:48.2%;
+              }
+              li:nth-child(n+3){
+                     margin-top:20px;margin-left:0;margin-bottom:30px;
+              }
+              li:last-child{
+                    margin-left:2.3%;
+              }
+            }           
+       }
+  }
+  
+   @media screen and (max-width:400px){
+       .book-list{
+             @include clearfix();
+             ul{
+             width:80%;margin:auto;
+             li{
+                width:100%;margin:20px 0;height:350px;
+                img{
+                height:230px;
+                }
+             }
+             li:nth-child(n+2){
+             margin-left:-0.8%;
+             }
+             li:last-child{
+               margin-bottom:30px;
+             }
+             }
+       }
+   }

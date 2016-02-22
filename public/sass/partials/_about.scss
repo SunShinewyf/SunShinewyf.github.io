@@ -1,0 +1,36 @@
+.about-container{
+     @include clearfix();
+       margin:50px auto;
+       width:80%;height:auto;
+       background:$white;
+       .right{
+       width:58%;
+        float:right;
+        p{
+          padding:8%;font-size:1.2em;line-height:2em;text-indent:2em;
+        }
+       }
+         .left{
+          width:35%;float:left;
+          img{
+          width:100%;padding:10%;
+          height:100%;
+          }
+       }
+}
+@media screen and (max-width:800px){
+	.about-container{
+	  .left{
+	    width:100%;
+	    img{
+	    width:80%;margin:0 auto;
+	    }
+	  }
+	  .right{
+	  width:100%;
+	  p{
+	  padding-top:1%;
+	  }
+	  }
+	}
+}

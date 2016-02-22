@@ -1,0 +1,23 @@
+name: the process of growing up
+url: http://SunShinewyf.github.io
+title: The process of growing up
+email: 2632807692@qq.com
+description: ./_site
+lsi:      false
+safe:     false
+baseurl: ""
+github_username:  SunShinewyf
+encoding: utf-8
+# Build settings
+
+markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
+pygments:    true
+highlighter: pygments
+
+post_defaults:
+  layout: post
+
+permalink: /blog/:year/:month/:day/:title

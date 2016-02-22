@@ -1,0 +1,15 @@
+@import "../modules/_mixins";
+footer{
+            @include clearfix();
+	width:100%;
+	background:#202121;
+	height:100px;
+	p{
+	    color:#3C948B;padding-left:20px;
+	     font: 14px/1.8 "Microsoft Yahei",arial,宋体;
+	}
+             p:first-child{
+                  margin-top:20px;
+             }
+	 
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Every day is different</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/css/font-awesome-ie7.scss">
+  <link rel="stylesheet" href="/public/css/base.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/pygments.css">
+</head>
+<body>
+   <header>
+        <p>SunShine----Reading or Traveling</p>
+        <ul class="active">
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/book">BOOK</a></li>
+        <li><a href="/tour">SPOT</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        </ul>
+        <div class="menu">
+        <img src="/public/img/menu-icon.png"/>
+              <ul>
+                 <a href="/index.html"><li>HOME</li></a>
+                <a href="/book"><li>BOOK</li></a>
+                <a href="/tour"><li>SPOT</li></a>
+                <a href="/about"><li>ABOUT</li></a>
+             </ul>
+        </div>
+   </header>
+  
+<div class="post-container">
+
+  <article class="post-content">
+     <div class="img">
+     <img src="/public/img/11.jpg"/>
+     </div>
+  <hr />
+<p>去图书馆淘这本书，也是无意间看到的,其实正是这种无意间的偶遇让人眼前一亮(不文艺了)<br />
+原本觉得css还是很简单的一些知识，无非是一些样式，写写就会了.<br />
+但是细细研究起来，还是有很多学问的．比如盒模型，css2，css3,css如何让网站加载速度快，这一点是我以前从来没有想到的，因为根本就没有接触到大型网站，对网站的性能也就没有要求了<br />
+但是这本书，主要读者对象是那些在公司中担任大型网站的前端工程师，但是对于我也是很收益的，毕竟自己没有在大型公司呆过(小型公司还是呆过的了)<br />
+这本书首先写了一个项目的流程顺序，接着就是开始书写css的一些基本准则，包括命名，注释，然后就是转向高级一点的东西，比如css框架，媒体查询，无障碍访问，css性能，sass和less．对于基础，它帮我巩固了一遍，对于高级的东西，它也帮我开阔了视野，很好的一本书，最后的最后，录部分，则列出了作为一个团队的内部开发流程，既真实又详细，实在是一本好书，收益良多<br />
+下面收录一些书上的细致的但是我觉得很受用的小知识点：<br />
+一般在自适应布局中，为了适应各种屏幕终端，需要设置相应大小的字体，为了让换算简单，一般将body的字体设置为如下：</p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#070;font-weight:bold">body</span>{
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>        <span style="color:#606">font-size</span>:<span style="color:#60E">62.5%</span>;
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>        }
+</pre></div>
+</div>
+</div>
+<p>因为通常浏览器默认值是16px;这样页面的布局字体就是10px,1em也是10px,简单方便<br />
+##  消除浮动
+<code>css
+	.clearfix:after{
+		content:".";
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+		}
+		.clearfix{
+		*zoom:1;
+		}
+</code><br />
+这本书列出的一些小知识点有的时候让我觉得很滑稽，感觉真心是太过了：#00ffaa 改为　#0fa　只是为了减少３个字符<br />
+但是这是因为我并没有接触到对性能很讲究的项目，特写是移动端项目，现在就开始重视起来吧</p>
+
+  </article>
+
+</div>
+
+<footer>
+  <p>Designed by SunShie</p>
+  <p>Copyright © 2015. All Rights Reserved.</p>
+  <p class="ll"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254826874'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254826874%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></p>
+</footer>
+<script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/slider.js"></script>
+<script type="text/javascript" src="/public/js/head.js"></script>
+</body>
+</html>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"1","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
