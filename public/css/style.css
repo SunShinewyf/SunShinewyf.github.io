@@ -299,7 +299,7 @@ header {
     .book-list ul li:not(.first) {
       margin-left: 2.3%; }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
   .container {
     width: 100%;
     overflow-x: hidden;
