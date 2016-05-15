@@ -323,7 +323,7 @@ header {
             display: block;
             margin-left: 10%; }
     .container .tour-list {
-      height: auto;
+      height: 800px;
       width: 80%; }
       .container .tour-list:before, .container .tour-list:after {
         content: "";
@@ -332,7 +332,7 @@ header {
         clear: both; }
       .container .tour-list .one {
         width: 100%;
-        height: auto; }
+        height: 800px; }
       .container .tour-list ul {
         width: 100%; }
         .container .tour-list ul li {
