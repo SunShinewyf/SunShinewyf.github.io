@@ -298,17 +298,17 @@ header {
         padding-left: 30%; }
     .book-list ul li:not(.first) {
       margin-left: 2.3%; }
-@media screen and (min-width: 960px){
-    .container .tour-list{
-        height:700px;
-    }
-    .container .one{
-        height:700px;
-    }
-    .container .tour-list ul li{
-        height:220px;
-    }
-}
+/*@media screen and (min-width: 1400px){*/
+    /*.container .tour-list{*/
+        /*height:700px;*/
+    /*}*/
+    /*.container .one{*/
+        /*height:700px;*/
+    /*}*/
+    /*.container .tour-list ul li{*/
+        /*height:220px;*/
+    /*}*/
+/*}*/
 @media screen and (max-width: 960px) {
   .container {
     width: 100%;
