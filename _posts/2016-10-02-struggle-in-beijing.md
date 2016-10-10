@@ -5,81 +5,12 @@ category: book
 image:  25.jpg
 ---
 
-[TOC]
+最近一直在忙找工作的事情，忙得差不多之后开始去图书馆淘了几本书。因为之后有可能去北京工作，但是在我的心里对北京一直都是排斥的，对于北京，在脑海里形成的第一印象就是雾霾，其次就是北漂，先不说雾霾对身体的危害，就是北漂这个词，其后有着多少北上人的心酸自不必说，“苦”是北京的代名词，这是我对它的定义。
+但是北京的互联网公司是最多的，可能以后就会被分配到北京去工作，那么我就没有退路了，所以呢，最好的办法就是自己消除这种害怕心理，或许那些代名词只是我强加在北京身上的一种评价，或者只是从别人的只言片语里得到北京的冰山一角，所以我就找来了这本书。
+书中的故事讲的是一个从湖南来的在北京从事房地产经理的北漂族的生活，在他的努力拼搏下，他终于找到了自己的幸福生活。有几个剪影让我特别印象深刻：
+1：女主梅紫苏虽然是一个富二代，有着显赫的家庭，父亲又是很有名的骨科医生，所以家里基本上不愁吃穿，但是呢，偏偏她就是一个独立不想啃老的主，不仅搬出家里，而且努力在电台中某得一职位，并且为了在这个职位中表现出色，她拼死拼活，而且经常为了赶稿忙到三更半夜。“这些像刺猬一样的女强人，表面上把自己武装得无懈可击，其实，那些向外张扬的刺，每一根都深深地扎进她们的血肉之躯，有多痛只有她们自己知道。”这一句话是对梅紫苏最好的评价。在北京，基本上所有人都是只能靠自己的拼搏才可以得到自己所得的，而且这个平台有足够的公平性，只要你努力，就会有收获。
+2：王子修是里面的第二男主人公，他是中文专业的研究生，极品宅男。他提倡一种慢生活，“人们常说自己忙，忙这个字，左边是新，右边是亡，太忙了心就会死，人就会过劳死”，这句话用来说一线城市的快节奏上班族很是贴切。他所推崇的慢生活或许需要我们这些急功近利和浮躁的人好好学习一下
+3：收废品的夏德利虽然只是在小区里面捡垃圾，但是他有远大的理想，在他的床头都贴满了人生规划表，并且也很用功，白天收废品之后晚上就学习到凌晨，这种精神值得我们学习，在逆境中成长的人往往会更坚韧
+读完这本书，里面虽然也充满着北漂的艰辛和不易，但是里面的人都很和善，他们互帮互助，诚心待人，虽然现实很残酷，需要每天挤地铁，拼车拼房才可以生存下来，但是他们都是那种积极面对生活的人，北漂虽然可怕，但是北京给了每个人一个梦的平台，在这里，每个人都可以通过自己的努力获得人生的成功。
+对于北京，我不再害怕了。。。。
 
-###redux的优缺点
-####优点
-可以让你构建一致化的应用，运行于不同的环境（客户端、服务器、原生应用），由于是单一的 state tree ，调试也变得非常容易
-只是 Redux 限定一个应用只能有一个 Store。单一 Store 带来的好处是，所有数据结果集中化，操作时的便利，只要把它传给最外层组件，那么内层组件就不需要维持 state，全部经父级由 props 往下传即可。子组件变得异常简单
-####缺点
-###Action
-**action**是把数据从应用传到 store 的有效载荷，它是 store 数据的唯一来源。一般来说你会通过 store.dispatch() 将 action 传到 store。
-
-Action 是一个普通对象。
-redux约定 Action 内使用一个字符串类型的 type 字段来表示将要执行的动作。
-```javascript
-  {
-    type: 'ADD_ITEM'
-    text: '我是Berwin' //或者存放一些其他想要的操作
-  }
-```
-###store
-Store 有以下职责：
-- 维持应用的 state；
-- 提供 getState() 方法获取 state；
-- 提供 dispatch(action) 方法更新 state；
-- 通过 subscribe(listener) 注册监听器。
-   
-###reducer
-Reducer 是一个普通的回调函数。
-当它被Redux调用的时候会为他传递两个参数 State 和 Action 。
-Reducer会根据 Action 的type来对旧的 State 进行操作。返回新的State。
-```javascript
-let reducer = (state = [], action) => {
-  switch (action.type) {
-    case ADD_ITEM:
-      return [createItem(action.text), ...state]
-
-    default:
-      return state
-  }
-}
-```
-> 不要修改 state 。
->- 在 default 情况下返回旧的 state。遇到未知的 action 时，一定要返回旧的 state。
->- 如果没有旧的State，就返回一个initialState，这很重要！！！
-
->如果在default或没有传入旧State的情况下不返回旧的State或initialState。。。那么当前的State会被重置为undefined！！
-```javascript
-// currentState 是当前的State，currentReducer 是当前的Reducer
-currentState = currentReducer(currentState, action);
-```
-上面是一部分核心源码
-
-###combineReducers
-combineReducers 生成了一个类似于Reducer的函数。为什么是类似于，因为它不是真正的Reducer，它只是一个调用Reducer的函数，只不过它接收的参数与真正的Reducer一模一样~
-```javascript
-function combineReducers(reducers) {
-
-  // 过滤reducers，把非function类型的过滤掉~
-  var finalReducers = pick(reducers, (val) => typeof val === 'function');
-
-  // 一开始我一直以为这个没啥用，后来我发现，这个函数太重要了。它在一开始，就已经把你的State改变了。变成了，Reducer的key 和 Reducer返回的initState组合。
-  var defaultState = mapValues(finalReducers, () => undefined);
-
-  return function combination(state = defaultState, action) {
-    // finalReducers 是 reducers
-    var finalState = mapValues(finalReducers, (reducer, key) => {
-
-      // state[key] 是当前Reducer所对应的State，可以理解为当前的State
-      var previousStateForKey = state[key];
-      var nextStateForKey = reducer(previousStateForKey, action);
-
-      return nextStateForKey;      
-    });
-
-    // finalState 是 Reducer的key和stat的组合。。
-  }
-}
-```
-从上面的源码可以看出，combineReducers 生成一个类似于Reducer的函数 combination 。
