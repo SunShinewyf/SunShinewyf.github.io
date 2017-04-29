@@ -8,7 +8,7 @@
 ### 书籍：
 - [何处是归程](http://sunshinewyf.github.io/blog/2017/04/28/hechushiguicheng)
 - [莫言自选集](http://sunshinewyf.github.io/blog/2017/03/24/moyan)
-- [三体-死神永生](http://sunshinewyf.github.io/blog/2017/03/24/moyan)
+- [三体-死神永生](http://sunshinewyf.github.io/blog/2017/01/19/santi-3)
 - [三体-黑暗森林](http://sunshinewyf.github.io/blog/2016/12/16/santi-2)
 - [三题-地球往事](http://sunshinewyf.github.io/blog/2016/11/28/san-ti-1)
 - [呼伦河传](http://sunshinewyf.github.io/blog/2016/10/24/hulunhe-zhuan)
