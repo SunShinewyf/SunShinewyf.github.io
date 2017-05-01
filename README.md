@@ -6,6 +6,7 @@
 下面罗列一下：
 
 ### 书籍：
+- [放学后](http://sunshinewyf.github.io/blog/2017/05/01/after-class)
 - [何处是归程](http://sunshinewyf.github.io/blog/2017/04/28/hechushiguicheng)
 - [莫言自选集](http://sunshinewyf.github.io/blog/2017/03/24/moyan)
 - [三体-死神永生](http://sunshinewyf.github.io/blog/2017/01/19/santi-3)
