@@ -6,6 +6,7 @@
 下面罗列一下：
 
 ### 书籍：
+- [解忧杂货店](http://sunshinewyf.github.io/blog/2017/05/07/allay-sorrow-shop)
 - [放学后](http://sunshinewyf.github.io/blog/2017/05/01/after-class)
 - [何处是归程](http://sunshinewyf.github.io/blog/2017/04/28/hechushiguicheng)
 - [莫言自选集](http://sunshinewyf.github.io/blog/2017/03/24/moyan)
